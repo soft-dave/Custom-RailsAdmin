@@ -1,0 +1,25 @@
+<h1></h1>
+<div id="list" style="width:99%;">
+  <div id="calendar"></div>
+</div>
+<h1></h1>
+
+<%= link_to '', '#', :style => 'display:none', :id => "event_popup", :remote => true, data: { toggle: "modal", target: "#ajax-modal" } %>
+
+<div id="ajax-modal" class="modal fade" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class='modal-header'>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title"></h3>
+      </div>
+      <div class='modal-body'>
+        <div class="modal-body-content"></div>
+        <div class="ajax-loader"></div>
+      </div>
+      <div class='modal-footer'>
+        <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
